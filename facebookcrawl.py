@@ -7,7 +7,7 @@ import json
 from facebook_api_settings import * # holds access token
 
 sleep_time = 5
-save_dir = 'data2/'
+save_dir = 'data/'
 
 #####################
 # EXTRACT GROUP IDS #

@@ -6,7 +6,7 @@ from gensim import corpora, models, similarities
 
 logging.basicConfig(format = '%(asctime)s : %(levelname)s : %(message)s', level = logging.INFO)
 
-file_dir = 'data2/'
+file_dir = 'data/'
 
 # load corpus and dictionary
 dictionary = corpora.Dictionary.load(file_dir + 'posts.dict')

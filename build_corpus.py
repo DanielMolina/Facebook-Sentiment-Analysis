@@ -6,7 +6,7 @@ from gensim import corpora, models, similarities
 
 logging.basicConfig(format = '%(asctime)s : %(levelname)s : %(message)s', level = logging.INFO)
 
-file_dir = 'data2/'
+file_dir = 'data/'
 
 posts_file = open(file_dir + 'all_posts.txt', 'r')
 posts = []
