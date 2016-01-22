@@ -8,7 +8,7 @@ data = []
 # Load Similiarity Values #
 ###########################
 
-similarity_file = open(file_dir + 'similarity7.txt', 'r')
+similarity_file = open(file_dir + 'similarity.txt', 'r')
 
 for line in similarity_file:
 	if line != '\n':
