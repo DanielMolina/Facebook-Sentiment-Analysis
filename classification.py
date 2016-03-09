@@ -30,13 +30,13 @@ test_tfidf = tfidf_transformer.transform(test_matrix)
 
 # fit the model
 classifier = sklearn.svm.SVC()
-classifier.fit(train_matrix, train_data['label'])
+classifier.fit(train_tfidf, train_data['label'])
 
 # predict sentiment for the test set
 predicted = classifier.predict(test_tfidf)
 
 # calculate the diagnostics
-accuracy = classifier.score(test_matrix, test_data['label'])
+accuracy = classifier.score(test_tfidf, test_data['label'])
 precision, recall, f1, _ = sklearn.metrics.precision_recall_fscore_support(test_data['label'], predicted)
 
 print(' ')
